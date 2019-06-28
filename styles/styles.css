@@ -175,9 +175,10 @@ p{
 ul.menu {
    list-style-type: none;
    margin: 0;
-   padding: 0;
+   padding-left: 25%;
    overflow: hidden;
-   background-color: #333;
+   background-color: #222;
+   width:100%;
  }
  
  ul.menu li {
