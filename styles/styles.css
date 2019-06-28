@@ -46,6 +46,12 @@ h1 {
 
 }
 
+.image button {
+   display: none;
+}
+.image:hover button {
+   display: block;
+}
 /*#example1:hover {
    opacity: .1;
 }*/
