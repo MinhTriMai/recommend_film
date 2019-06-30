@@ -15,3 +15,16 @@ function openNav() {
     document.getElementById("box1").style.transition = "all 0.7s ease";
     document.getElementById("box1").style.border = "none";
  }
+// function add video
+ function addVideos(selector, videoIds) {
+   const list = document.querySelector(selector);
+   for (let i = 0; i< videoIds.length; i+=1){
+     const item = document.createElement("li");
+     item.classList.add('image');
+     item.innerHTML = `<a href="#">
+                         <iframe width="280" height="150" src="https://www.youtube.com/embed/${videoIds[i]}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                         <button>abc</button>
+                       </a>`;
+     list.appendChild(item);
+   }
+ }

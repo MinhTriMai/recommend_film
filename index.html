@@ -7,7 +7,7 @@
   </head>
 
 <header>
-<p>NETFMOVIE</p>
+  <p>NETFMOVIE</p>
 </header>
 
 <body>
@@ -41,28 +41,34 @@
 
             </ul>
         </section>
-  
+        <section id="row3">
+          <h1 class="sectionTitle">Recently Added</h1>
+        
+          <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Movie 1</a>
+          </div>
+          <ul class="img-list">
+
+          </ul>
+      </section>
+      <section id="row4">
+        <h1 class="sectionTitle">Trending Now</h1>
+      
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Movie 1</a>
+        </div>
+        <ul class="img-list">
+
+        </ul>
+    </section>
     </div>
   <script>
-    function addVideos(selector, videoIds) {
-      const list = document.querySelector(selector);
-      for (let i = 0; i < videoIds.length; i += 1) {
-        
-        const item = document.createElement('li');
-        item.classList.add('image');
-        item.innerHTML = `<a href="#">
-                            <iframe width="280" height="150" src="https://www.youtube.com/embed/${videoIds[i]}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            <button>abc</button>
-                          </a>`;
-
-        list.appendChild(item); 
-        }
-    }
-
-
     addVideos('#row1 .img-list', ['THXPCF6UHh8', 'THXPCF6UHh8', 'THXPCF6UHh8', 'THXPCF6UHh8', 'THXPCF6UHh8', 'THXPCF6UHh8']);
     addVideos('#row2 .img-list', ['q2JzRKJEgwg', 'q2JzRKJEgwg', 'q2JzRKJEgwg']);
-    
+    addVideos('#row3 .img-list', ['q2JzRKJEgwg', 'q2JzRKJEgwg', 'q2JzRKJEgwg']);
+    addVideos('#row4 .img-list', ['q2JzRKJEgwg', 'q2JzRKJEgwg', 'q2JzRKJEgwg']);
   </script>
   </body>
 </html>
